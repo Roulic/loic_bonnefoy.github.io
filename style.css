@@ -181,3 +181,23 @@
 @media (max-width: 800px) { .contact-grid { grid-template-columns: 1fr; } }
 
 .planet-icon svg { width: 29px; height: 29px; display: block; }
+
+/* Education marks, mobility sections, and resilient software logos */
+.school-logo { display:flex; align-items:center; gap:7px; min-height:38px; padding:5px 8px; border:1px solid var(--line); border-radius:10px; background:#fff; color:#18324d; max-width:210px; }
+.school-logo img { width:23px; height:23px; object-fit:contain; flex:0 0 23px; }
+.school-logo span { display:flex; flex-direction:column; gap:1px; font:800 8px/1.1 "DM Mono",monospace; letter-spacing:.15px; }
+.school-logo b { font:800 15px/1 Manrope,sans-serif; letter-spacing:.6px; }
+.carnot-logo { color:#a33338; }
+.carnot-logo b { font-size:12px; }
+.mobility-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.globe-icon { color:var(--accent-dark); }
+.globe-icon svg { width:28px; height:28px; }
+.language-code { display:inline-grid; place-items:center; width:25px; height:25px; border-radius:6px; background:#eaf0f8; color:#24466e; font:800 11px "DM Mono",monospace; }
+.software-chip { position:relative; }
+.software-chip img { width:22px; height:22px; object-fit:contain; display:block; }
+.software-chip .software-mark { flex:0 0 22px; }
+.software-chip img:not([src]) { display:none; }
+.scilab-mark { background:#e8eef6; color:#3b6795; }
+.excel-mark { background:#e1f2e8; color:#217346; }
+.inventor-mark { background:#e3effb; color:#0696d7; }
+@media (max-width: 760px) { .mobility-grid { grid-template-columns:1fr; } .school-logo { max-width:185px; } }
