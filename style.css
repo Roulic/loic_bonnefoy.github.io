@@ -157,3 +157,27 @@
     @media (prefers-reduced-motion: reduce) {
       *, *:before, *:after { scroll-behavior: auto !important; transition: none !important; }
     }
+
+/* Portfolio refinements */
+.project-image { padding: 14px; }
+.project-image img { position: relative; z-index: 1; display: block; width: 100%; height: 100%; min-height: 210px; max-height: 320px; object-fit: contain; border-radius: 12px; }
+.project-image.image-missing:after { content: "Add robot.png or snake.png to the repository"; color: #bac5d4; font: 11px "DM Mono", monospace; position: absolute; z-index: 2; padding: 12px; text-align: center; }
+.software-chip img { width: 22px; height: 22px; object-fit: contain; display: block; }
+.software-chip { gap: 8px; }
+.software-mark { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 5px; background: #e8eef6; color: #34516f; font-weight: 900; font-size: 13px; }
+.regressi-mark { background: #e8eef6; }
+.planet-icon { color: #ff9b54; }
+.farm-logo-box { padding: 0; overflow: hidden; background: #fff; }
+.farm-logo-box a, .farm-logo-box img { width: 100%; height: 100%; display: block; }
+.farm-logo-box img { object-fit: contain; padding: 3px; }
+.work-location { font-size: 11px !important; font-weight: 700; color: #8b5a35 !important; margin-top: -8px !important; }
+.contact-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 17px; }
+.contact-card { text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.contact-card p { overflow-wrap: anywhere; }
+.contact-icon { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; background: #fff0e5; color: #c65a16; font-size: 24px; font-weight: 800; margin-bottom: 16px; }
+.linkedin-icon { background: #0a66c2; color: white; font-family: Arial,sans-serif; font-size: 23px; letter-spacing: -1px; }
+.contact-action { margin-top: auto; padding-top: 8px; font-size: 11px; font-weight: 800; color: var(--accent-dark); }
+.contact-card:hover .contact-action { text-decoration: underline; }
+@media (max-width: 800px) { .contact-grid { grid-template-columns: 1fr; } }
+
+.planet-icon svg { width: 29px; height: 29px; display: block; }
