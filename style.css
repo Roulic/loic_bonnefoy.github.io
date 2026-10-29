@@ -89,7 +89,18 @@
     .software-chip b { display: grid; place-items: center; min-width: 19px; height: 19px; padding: 0 3px; border-radius: 5px; background: #fff0e5; color: #c65a16; font: 800 9px "DM Mono", monospace; }
     .language-list { display: grid; gap: 10px; margin: 18px 0; }
     .language-item { display: flex; align-items: center; gap: 11px; border: 1px solid var(--line); border-radius: 11px; padding: 11px 12px; }
-    .language-icon { font-size: 19px; line-height: 1; }
+    .language-icon.language-code {
+          display: inline-grid;
+          place-items: center;
+          width: 25px;
+          height: 25px;
+          flex: 0 0 25px;
+          border-radius: 50%;
+          background: #e8eef9;
+          color: #244a83;
+          font: 800 10px "DM Mono", monospace;
+          letter-spacing: -.04em;
+      }
     .language-item strong { font-size: 12px; }
     .language-level { margin-left: auto; color: var(--accent-dark); background: #fff0e5; border-radius: 7px; padding: 4px 7px; font: 10px "DM Mono", monospace; }
     .snake-board { width: 190px; height: 150px; border: 1px solid rgba(255,155,84,.35); border-radius: 9px; position: relative; z-index: 1; background-image: linear-gradient(rgba(255,155,84,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,155,84,.1) 1px,transparent 1px); background-size: 19px 19px; }
