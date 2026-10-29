@@ -161,7 +161,7 @@
 /* Portfolio refinements */
 .project-image { padding: 14px; }
 .project-image img { position: relative; z-index: 1; display: block; width: 100%; height: 100%; min-height: 210px; max-height: 320px; object-fit: contain; border-radius: 12px; }
-.project-image.image-missing:after { content: "Add robot.png or snake.png to the repository"; color: #bac5d4; font: 11px "DM Mono", monospace; position: absolute; z-index: 2; padding: 12px; text-align: center; }
+.project-image.image-missing:after { content: "Add robot.jpg or snake.png to the images folder"; color: #bac5d4; font: 11px "DM Mono", monospace; position: absolute; z-index: 2; padding: 12px; text-align: center; }
 .software-chip img { width: 22px; height: 22px; object-fit: contain; display: block; }
 .software-chip { gap: 8px; }
 .software-mark { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 5px; background: #e8eef6; color: #34516f; font-weight: 900; font-size: 13px; }
@@ -185,6 +185,6 @@
 
 /* School logos and language-code badge */
 .school-logo { display: inline-flex; align-items: center; gap: 9px; min-width: 0; color: var(--ink, #172033); font-size: 10px; font-weight: 750; letter-spacing: .02em; }
-.school-logo img { display: block; width: auto; height: 34px; max-width: 72px; object-fit: contain; flex: 0 0 auto; }
-.carnot-logo img { max-width: 52px; height: 36px; }
+.school-logo img { display: block; width: auto; height: 50px; max-width: 105px; object-fit: contain; flex: 0 0 auto; }
+.carnot-logo img { max-width: 78px; height: 52px; }
 .language-icon.language-code { display: inline-grid; place-items: center; width: 25px; height: 25px; flex: 0 0 25px; border-radius: 50%; background: #e8eef9; color: #244a83; font: 800 10px "DM Mono", monospace; letter-spacing: -.04em; }
