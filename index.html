@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en">
+<html lang="fr" data-lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -275,7 +275,7 @@
       }
     };
 
-    let currentLang = "en";
+    let currentLang = "fr";
     const langToggle = document.getElementById("langToggle");
     function setLanguage(lang) {
       currentLang = lang;
@@ -320,8 +320,9 @@
     try {
       const savedLang = localStorage.getItem("portfolio-language");
       if (savedLang === "fr" || savedLang === "en") setLanguage(savedLang);
-    } catch (e) { /* Language defaults to English if browser storage is unavailable. */ }
-
+    } catch (e) {
+      setLanguage("fr");
+    }
     const sections = document.querySelectorAll("main section[id]");
     const navAnchors = document.querySelectorAll(".nav-links a");
     if ("IntersectionObserver" in window) {
