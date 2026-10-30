@@ -251,10 +251,9 @@
   <footer>
     <div class="footer-inner">
       <span>© <span id="year"></span> Loïc Bonnefoy · <span data-i18n="footerSchool">INP ENSEEIHT, Toulouse</span></span>
-      <span class="mono" data-i18n="footerNote">DESIGNED TO GROW · 2026–2029</span>
+      <span class="mono" data-i18n="footerNote">E-PORTFOLIO · 2026–2029</span>
     </div>
   </footer>
-
   <script>
     const translations = {
       en: {
@@ -319,7 +318,7 @@
     document.getElementById("year").textContent = new Date().getFullYear();
     try {
       const savedLang = localStorage.getItem("portfolio-language");
-      if (savedLang === "fr" || savedLang === "en") setLanguage(savedLang);
+      setLanguage(savedLang === "en" ? "en" : "fr");
     } catch (e) {
       setLanguage("fr");
     }
