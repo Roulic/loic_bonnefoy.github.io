@@ -42,7 +42,7 @@
         <p class="hero-intro" data-i18n="heroIntro">I am an engineering student at INP ENSEEIHT in Toulouse, interested in robotics, mechatronics and automatic control. I enjoy turning technical ideas into working systems through prototyping, programming, testing and iteration.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#course"><span data-i18n="exploreBtn">Explore my portfolio</span> <span aria-hidden="true">↘</span></a>
-          <a class="btn btn-outline" href="CV_EN.pdf" target="_blank" rel="noopener" data-i18n="cvBtn">View my CV ↗</a>
+          <a class="btn btn-outline" id="heroCvLink" href="CV_EN.pdf" target="_blank" rel="noopener" data-i18n="cvBtn">View my CV ↗</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -306,9 +306,8 @@
       document.documentElement.dataset.lang = lang;
       langToggle.setAttribute("aria-label", lang === "en" ? "Switch to French" : "Passer en anglais");
       langToggle.setAttribute("aria-pressed", String(lang === "fr"));
-      document.querySelectorAll('a[href="CV_EN.pdf"], a[href="CV_FR.pdf"]').forEach(link => {
-        link.href = lang === "fr" ? "CV_FR.pdf" : "CV_EN.pdf";
-      });
+      const heroCvLink = document.getElementById("heroCvLink");
+      heroCvLink.href = lang === "fr" ? "CV_FR.pdf" : "CV_EN.pdf";
       document.title = lang === "en" ? "Loïc Bonnefoy — e-portfolio" : "Loïc Bonnefoy — e-portfolio";
       try { localStorage.setItem("portfolio-language", lang); } catch (e) { /* Storage may be disabled. */ }
     }
